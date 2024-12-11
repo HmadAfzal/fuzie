@@ -3,7 +3,6 @@ import { DM_Sans } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/providers/theme-provider'
 
-
 const font = DM_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
+  return (  
       <html lang="en">
         <body className={font.className}>
           <ThemeProvider
